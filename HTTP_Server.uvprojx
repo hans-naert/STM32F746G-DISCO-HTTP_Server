@@ -514,6 +514,11 @@
               <FileType>9</FileType>
               <FilePath>.\Web\testcgi.cgi</FilePath>
             </File>
+            <File>
+              <FileName>vives_logo.png</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\vives_logo.png</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1053,6 +1058,11 @@
               <FileName>testcgi.cgi</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\testcgi.cgi</FilePath>
+            </File>
+            <File>
+              <FileName>vives_logo.png</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\vives_logo.png</FilePath>
             </File>
           </Files>
         </Group>
