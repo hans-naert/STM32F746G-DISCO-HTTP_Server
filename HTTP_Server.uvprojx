@@ -505,11 +505,6 @@
               <FilePath>.\Web\pabb.gif</FilePath>
             </File>
             <File>
-              <FileName>test.htm</FileName>
-              <FileType>9</FileType>
-              <FilePath>.\Web\test.htm</FilePath>
-            </File>
-            <File>
               <FileName>testcgi.cgi</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\testcgi.cgi</FilePath>
@@ -528,6 +523,11 @@
               <FileName>style.css</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\style.css</FilePath>
+            </File>
+            <File>
+              <FileName>test.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\test.cgi</FilePath>
             </File>
           </Files>
         </Group>
@@ -1060,11 +1060,6 @@
               <FilePath>.\Web\pabb.gif</FilePath>
             </File>
             <File>
-              <FileName>test.htm</FileName>
-              <FileType>9</FileType>
-              <FilePath>.\Web\test.htm</FilePath>
-            </File>
-            <File>
               <FileName>testcgi.cgi</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\testcgi.cgi</FilePath>
@@ -1083,6 +1078,11 @@
               <FileName>style.css</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\style.css</FilePath>
+            </File>
+            <File>
+              <FileName>test.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\test.cgi</FilePath>
             </File>
           </Files>
         </Group>

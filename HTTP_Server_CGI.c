@@ -375,7 +375,7 @@ uint32_t netCGI_Script (const char *env, char *buf, uint32_t buflen, uint32_t *p
       break;
 		
 		case 'z':
-			len = (uint32_t)sprintf (buf, &env[1], "Hello Vives");
+			len = (uint32_t)sprintf (buf, &env[1], (get_button()&0x1)?"checked":"");
 		
 		
   }
