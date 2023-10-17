@@ -519,6 +519,16 @@
               <FileType>9</FileType>
               <FilePath>.\Web\vives_logo.png</FilePath>
             </File>
+            <File>
+              <FileName>script.js</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\script.js</FilePath>
+            </File>
+            <File>
+              <FileName>style.css</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\style.css</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1063,6 +1073,16 @@
               <FileName>vives_logo.png</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\vives_logo.png</FilePath>
+            </File>
+            <File>
+              <FileName>script.js</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\script.js</FilePath>
+            </File>
+            <File>
+              <FileName>style.css</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\style.css</FilePath>
             </File>
           </Files>
         </Group>
