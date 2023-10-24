@@ -529,6 +529,11 @@
               <FileType>9</FileType>
               <FilePath>.\Web\test.cgi</FilePath>
             </File>
+            <File>
+              <FileName>button.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\button.cgi</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1083,6 +1088,11 @@
               <FileName>test.cgi</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\test.cgi</FilePath>
+            </File>
+            <File>
+              <FileName>button.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\button.cgi</FilePath>
             </File>
           </Files>
         </Group>
