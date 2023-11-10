@@ -36,6 +36,11 @@
 extern uint64_t app_main_stk[];
 extern const osThreadAttr_t app_main_attr;
 
+
+#define EXT_SHLD_LED0_Pin GPIO_PIN_6
+#define EXT_SHLD_LED0_GPIO_Port GPIOF
+
+
 /* Exported macro ------------------------------------------------------------*/
 
 /* Exported functions ------------------------------------------------------- */

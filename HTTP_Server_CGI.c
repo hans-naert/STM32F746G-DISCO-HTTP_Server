@@ -7,6 +7,7 @@
  * Rev.:    V6.0.0
  *----------------------------------------------------------------------------*/
 
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 #include "cmsis_os2.h"                  // ::CMSIS:RTOS2
@@ -170,6 +171,10 @@ void netCGI_ProcessData (uint8_t code, const char *data, uint32_t len) {
         // LCD Module line 2 text
         strcpy (lcd_text[1], var+5);
         osThreadFlagsSet (TID_Display, 0x01);
+      }
+			else if (strcmp (var, "toggle-button=true") == 0) {
+				printf("toggle-button=true received\n");
+        HAL_GPIO_TogglePin(GPIOF,GPIO_PIN_6);
       }
     }
   } while (data);
