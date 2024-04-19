@@ -16,6 +16,9 @@
  */
 #define CMSIS_device_header "stm32f7xx.h"
 
+/* ARM::CMSIS-View:Event Recorder&DAP@1.5.3 */
+#define RTE_CMSIS_View_EventRecorder
+        #define RTE_CMSIS_View_EventRecorder_DAP
 /* ARM::CMSIS:RTOS2:Keil RTX5&Source@5.8.0 */
 #define RTE_CMSIS_RTOS2                 /* CMSIS-RTOS2 */
         #define RTE_CMSIS_RTOS2_RTX5            /* CMSIS-RTOS2 Keil RTX5 */
@@ -33,9 +36,6 @@
         #define RTE_Drivers_USART6              /* Driver USART6 */
         #define RTE_Drivers_USART7              /* Driver USART7 */
         #define RTE_Drivers_USART8              /* Driver USART8 */
-/* Keil::Compiler&ARM Compiler:Event Recorder&DAP@1.5.1 */
-#define RTE_Compiler_EventRecorder
-          #define RTE_Compiler_EventRecorder_DAP
 /* Keil::Compiler&ARM Compiler:I/O:STDIN&User@1.2.0 */
 #define RTE_Compiler_IO_STDIN           /* Compiler I/O: STDIN */
           #define RTE_Compiler_IO_STDIN_User      /* Compiler I/O: STDIN User */
