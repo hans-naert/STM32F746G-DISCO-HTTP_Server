@@ -505,9 +505,9 @@
               <FilePath>.\Web\vives.png</FilePath>
             </File>
             <File>
-              <FileName>index.cgi</FileName>
+              <FileName>index.htm</FileName>
               <FileType>9</FileType>
-              <FilePath>.\Web\index.cgi</FilePath>
+              <FilePath>.\Web\index.htm</FilePath>
             </File>
           </Files>
         </Group>
@@ -1040,9 +1040,9 @@
               <FilePath>.\Web\vives.png</FilePath>
             </File>
             <File>
-              <FileName>index.cgi</FileName>
+              <FileName>index.htm</FileName>
               <FileType>9</FileType>
-              <FilePath>.\Web\index.cgi</FilePath>
+              <FilePath>.\Web\index.htm</FilePath>
             </File>
           </Files>
         </Group>
