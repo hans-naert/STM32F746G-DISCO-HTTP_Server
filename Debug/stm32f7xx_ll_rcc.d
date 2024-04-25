@@ -1,9 +1,7 @@
-./debug/main.o: main.c RTE\_Debug\Pre_Include_Global.h main.h \
-  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal.h \
-  RTE\Device\STM32F746NGHx\stm32f7xx_hal_conf.h \
-  RTE\_Debug\RTE_Components.h \
-  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc.h \
-  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h \
+./debug/stm32f7xx_ll_rcc.o: \
+  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_rcc.c \
+  RTE\_Debug\Pre_Include_Global.h \
+  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_rcc.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f746xx.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\core_cm7.h \
@@ -15,6 +13,11 @@
   C:\Users\u0081767\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\armv7m_cachel1.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h \
+  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal.h \
+  RTE\Device\STM32F746NGHx\stm32f7xx_hal_conf.h \
+  RTE\_Debug\RTE_Components.h \
+  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc.h \
+  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   C:\Keil_v5\ARM\ARMCLANG\include\stddef.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h \
@@ -33,6 +36,4 @@
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_ltdc.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_ltdc_ex.h \
   C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr.h \
-  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr_ex.h \
-  C:\Users\u0081767\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\RTOS2\Include\cmsis_os2.h \
-  C:\Keil_v5\ARM\ARMCLANG\include\stdio.h
+  C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr_ex.h

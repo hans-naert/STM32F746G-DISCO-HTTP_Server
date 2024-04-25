@@ -23,6 +23,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdio.h>
 
 #ifdef RTE_CMSIS_RTOS2_RTX5
 /**
@@ -114,6 +115,8 @@ int main(void)
 #ifdef RTE_CMSIS_RTOS2
   /* Initialize CMSIS-RTOS2 */
   osKernelInitialize ();
+	printf("Hello Vives!\n");
+	
 
   /* Create application main thread */
   osThreadNew(app_main, NULL, &app_main_attr);
