@@ -24,6 +24,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 
 #ifdef RTE_CMSIS_RTOS2_RTX5
 /**
@@ -75,6 +76,20 @@ static void Error_Handler(void);
 static void MPU_Config(void);
 static void CPU_CACHE_Enable(void);
 
+int sine_value=0;
+	
+void sine_thread()
+{
+	while(1)
+	{
+		osDelay(100);
+		sine_value= 1000*sin(osKernelGetTickCount()/1000.0);
+		if(osKernelGetTickCount()%10000==500)
+			printf("sine_value %d\n",sine_value);
+	}
+}
+		
+
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -117,6 +132,9 @@ int main(void)
   osKernelInitialize ();
 	printf("Hello Vives!\n");
 	
+
+   /* Create application main thread */
+  osThreadNew(sine_thread, NULL, NULL);
 
   /* Create application main thread */
   osThreadNew(app_main, NULL, &app_main_attr);
