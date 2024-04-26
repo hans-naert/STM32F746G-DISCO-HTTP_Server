@@ -26,6 +26,8 @@
 ".\debug\rtx_config.o"
 ".\debug\phy_lan8742a.o"
 ".\debug\emac_stm32f7xx.o"
+".\debug\retarget_io.o"
+".\debug\stdout_itm.o"
 ".\debug\eventrecorder.o"
 ".\debug\stm32f7xx_hal.o"
 ".\debug\stm32f7xx_hal_adc.o"

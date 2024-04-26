@@ -23,6 +23,9 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdio.h>
+#include <math.h>
+#include "EventRecorder.h"              // CMSIS-View:Event Recorder&&DAP
 
 #ifdef RTE_CMSIS_RTOS2_RTX5
 /**
@@ -74,6 +77,19 @@ static void Error_Handler(void);
 static void MPU_Config(void);
 static void CPU_CACHE_Enable(void);
 
+int sine_value=0;
+void sine_thread()
+{
+	while(1)
+	{
+		osDelay(100);
+		sine_value=1000*sin(osKernelGetTickCount()/1000.0);
+		if(osKernelGetTickCount()%10000==500)
+			printf("sine_value %d\n",sine_value);
+	}
+}
+
+
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -114,6 +130,10 @@ int main(void)
 #ifdef RTE_CMSIS_RTOS2
   /* Initialize CMSIS-RTOS2 */
   osKernelInitialize ();
+	EventRecorderInitialize (EventRecordAll, 1); 
+	printf("Hello Vives!\n");
+	
+	osThreadNew(sine_thread,NULL,NULL);
 
   /* Create application main thread */
   osThreadNew(app_main, NULL, &app_main_attr);

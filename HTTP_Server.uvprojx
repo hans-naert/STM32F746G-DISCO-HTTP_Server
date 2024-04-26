@@ -531,6 +531,9 @@
           <GroupName>::CMSIS Driver</GroupName>
         </Group>
         <Group>
+          <GroupName>::CMSIS-Compiler</GroupName>
+        </Group>
+        <Group>
           <GroupName>::CMSIS-View</GroupName>
         </Group>
         <Group>
@@ -1066,6 +1069,9 @@
           <GroupName>::CMSIS Driver</GroupName>
         </Group>
         <Group>
+          <GroupName>::CMSIS-Compiler</GroupName>
+        </Group>
+        <Group>
           <GroupName>::CMSIS-View</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -1184,6 +1190,13 @@
           <targetInfo name="Release"/>
         </targetInfos>
       </api>
+      <api Capiversion="1.0.0" Cclass="CMSIS-Compiler" Cgroup="STDOUT" condition="CortexDevice" exclusive="1">
+        <package name="CMSIS-Compiler" schemaVersion="1.7.27" url="https://www.keil.com/pack/" vendor="ARM" version="2.0.0"/>
+        <targetInfos>
+          <targetInfo name="Debug"/>
+          <targetInfo name="Release"/>
+        </targetInfos>
+      </api>
       <api Capiversion="1.0.1" Cclass="CMSIS" Cgroup="OS Tick" exclusive="1">
         <package name="CMSIS" schemaVersion="1.7.7" url="https://www.keil.com/pack/" vendor="ARM" version="6.0.0"/>
         <targetInfos>
@@ -1207,6 +1220,20 @@
       </api>
     </apis>
     <components>
+      <component Cclass="CMSIS-Compiler" Cgroup="CORE" Cvendor="ARM" Cversion="1.0.0" condition="ARMCC CortexDevice">
+        <package name="CMSIS-Compiler" schemaVersion="1.7.27" url="https://www.keil.com/pack/" vendor="ARM" version="2.0.0"/>
+        <targetInfos>
+          <targetInfo name="Debug"/>
+          <targetInfo name="Release"/>
+        </targetInfos>
+      </component>
+      <component Capiversion="1.0.0" Cclass="CMSIS-Compiler" Cgroup="STDOUT" Csub="ITM" Cvendor="ARM" Cversion="1.0.0" condition="CORE ITM">
+        <package name="CMSIS-Compiler" schemaVersion="1.7.27" url="https://www.keil.com/pack/" vendor="ARM" version="2.0.0"/>
+        <targetInfos>
+          <targetInfo name="Debug"/>
+          <targetInfo name="Release"/>
+        </targetInfos>
+      </component>
       <component Cclass="CMSIS-View" Cgroup="Event Recorder" Cvariant="DAP" Cvendor="ARM" Cversion="1.5.3" condition="EventRecorder" isTargetSpecific="1">
         <package name="CMSIS-View" schemaVersion="1.7.25" url="https://www.keil.com/pack/" vendor="ARM" version="1.1.0"/>
         <targetInfos>
