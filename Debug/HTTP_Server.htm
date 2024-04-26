@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Debug\HTTP_Server.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Debug\HTTP_Server.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Sat Apr 20 16:13:32 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Fri Apr 26 19:37:56 2024
 <BR><P>
 <H3>Maximum Stack Usage =        392 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -437,27 +437,27 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
 </UL>
-<P><STRONG><a name="[13e]"></a>netCGI_ProcessQuery</STRONG> (Thumb, 216 bytes, Stack size 80 bytes, http_server_cgi.o(.text))
+<P><STRONG><a name="[13d]"></a>netCGI_ProcessQuery</STRONG> (Thumb, 216 bytes, Stack size 80 bytes, http_server_cgi.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = netCGI_ProcessQuery &rArr; netIF_SetOption &rArr; net_sys_lock &rArr; netos_lock &rArr; osMutexAcquire &rArr; EvrRtxMutexAcquire &rArr; EventRecord2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_aton
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_GetEnvVar
+<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_aton
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_GetEnvVar
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_listener
 </UL>
 
-<P><STRONG><a name="[142]"></a>netCGI_ProcessData</STRONG> (Thumb, 496 bytes, Stack size 96 bytes, http_server_cgi.o(.text))
+<P><STRONG><a name="[141]"></a>netCGI_ProcessData</STRONG> (Thumb, 496 bytes, Stack size 96 bytes, http_server_cgi.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = netCGI_ProcessData &rArr; netHTTPs_SetPassword &rArr; EventRecordData
 </UL>
-<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_LoginActive
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_GetEnvVar
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_SetOut
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_SetOut
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_LoginActive
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_GetEnvVar
 <LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsSet
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[39f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_kill_session
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_listener
@@ -475,14 +475,14 @@ Global Symbols
 <LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netTCP_GetPeer
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netTCP_GetLocalPort
 <LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netTCP_GetState
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_LoginActive
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_LoginActive
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_button
 <LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AD_in
 <LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_http_server_run
 </UL>
@@ -502,7 +502,7 @@ Global Symbols
 <LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SDRAM_Init
 <LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_SDRAM_MspInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
+<BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
 </UL>
 
 <P><STRONG><a name="[154]"></a>BSP_SDRAM_MspInit</STRONG> (Thumb, 376 bytes, Stack size 40 bytes, stm32746g_discovery_sdram.o(.text))
@@ -577,7 +577,7 @@ Global Symbols
 
 <P><STRONG><a name="[456]"></a>Buttons_GetCount</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, buttons_746g_discovery.o(.text), UNUSED)
 
-<P><STRONG><a name="[133]"></a>GLCD_Initialize</STRONG> (Thumb, 460 bytes, Stack size 240 bytes, glcd_746g_discovery.o(.text))
+<P><STRONG><a name="[132]"></a>GLCD_Initialize</STRONG> (Thumb, 460 bytes, Stack size 240 bytes, glcd_746g_discovery.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 392<LI>Call Chain = GLCD_Initialize &rArr; BSP_SDRAM_Init &rArr; BSP_SDRAM_MspInit &rArr; HAL_DMA_Init &rArr; HAL_GetTick &rArr; osKernelGetTickCount &rArr; EvrRtxKernelGetTickCount &rArr; EventRecord2
 </UL>
 <BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
@@ -596,19 +596,19 @@ Global Symbols
 <LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_DeInit
 </UL>
 
-<P><STRONG><a name="[135]"></a>GLCD_SetForegroundColor</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
+<P><STRONG><a name="[134]"></a>GLCD_SetForegroundColor</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display
 </UL>
 
-<P><STRONG><a name="[134]"></a>GLCD_SetBackgroundColor</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
+<P><STRONG><a name="[133]"></a>GLCD_SetBackgroundColor</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display
 </UL>
 
-<P><STRONG><a name="[136]"></a>GLCD_ClearScreen</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
+<P><STRONG><a name="[135]"></a>GLCD_ClearScreen</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display
 </UL>
 
-<P><STRONG><a name="[137]"></a>GLCD_SetFont</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
+<P><STRONG><a name="[136]"></a>GLCD_SetFont</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, glcd_746g_discovery.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display
 </UL>
 
@@ -622,7 +622,7 @@ Global Symbols
 
 <P><STRONG><a name="[45b]"></a>GLCD_DrawChar</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, glcd_746g_discovery.o(.text), UNUSED)
 
-<P><STRONG><a name="[138]"></a>GLCD_DrawString</STRONG> (Thumb, 206 bytes, Stack size 36 bytes, glcd_746g_discovery.o(.text))
+<P><STRONG><a name="[137]"></a>GLCD_DrawString</STRONG> (Thumb, 206 bytes, Stack size 36 bytes, glcd_746g_discovery.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = GLCD_DrawString
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display
@@ -658,13 +658,12 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 
-<P><STRONG><a name="[132]"></a>LED_SetOut</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, led_746g_discovery.o(.text))
+<P><STRONG><a name="[146]"></a>LED_SetOut</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, led_746g_discovery.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LED_SetOut
 </UL>
 <BR>[Calls]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BlinkLed
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 </UL>
 
 <P><STRONG><a name="[461]"></a>LED_GetCount</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, led_746g_discovery.o(.text), UNUSED)
@@ -1309,7 +1308,7 @@ Global Symbols
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxThreadFlagsWait
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxThreadFlagsClear
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxThreadFlagsSet
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
 <LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsSet
 </UL>
 
@@ -1360,7 +1359,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecord4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
+<BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
 </UL>
 
 <P><STRONG><a name="[1d4]"></a>EvrRtxThreadFlagsWaitPending</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, rtx_evr.o(.text))
@@ -2980,7 +2979,7 @@ Global Symbols
 <LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadFlagsError
 <LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxPostProcess
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netDHCP_Notify
 <LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netos_flag_set
 </UL>
@@ -2998,7 +2997,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[1d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadFlagsGet
 </UL>
 
-<P><STRONG><a name="[13d]"></a>osThreadFlagsWait</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, rtx_thread.o(.text))
+<P><STRONG><a name="[13c]"></a>osThreadFlagsWait</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, rtx_thread.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = osThreadFlagsWait &rArr; EvrRtxThreadFlagsWait &rArr; EventRecord4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadFlagsWait
@@ -3181,7 +3180,7 @@ Global Symbols
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxKernelInfoRetrieved
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
 <LI><a href="#[31c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_0
 <LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_request
 <LI><a href="#[3c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_reply
@@ -3394,8 +3393,8 @@ Global Symbols
 <LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxDelayUntil
 <LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxDelayError
 <LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxDelay
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netInitialize
 <LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_request
 <LI><a href="#[3c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_reply
@@ -3728,7 +3727,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Initialize
 <LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_SDRAM_MspInit
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
 <LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Buttons_Initialize
 <LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Initialize
 <LI><a href="#[2d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_MCOConfig
@@ -3751,8 +3750,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[177]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
 <LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Uninitialize
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_SetOut
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_SetOut
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
 </UL>
 
 <P><STRONG><a name="[48a]"></a>HAL_GPIO_TogglePin</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f7xx_hal_gpio.o(.text), UNUSED)
@@ -3772,7 +3771,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_LTDC_MspInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
+<BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
 </UL>
 
 <P><STRONG><a name="[2bf]"></a>HAL_LTDC_MspInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f7xx_hal_ltdc.o(.text))
@@ -3813,7 +3812,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LTDC_SetConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
+<BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
 </UL>
 
 <P><STRONG><a name="[48c]"></a>HAL_LTDC_ConfigColorKeying</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, stm32f7xx_hal_ltdc.o(.text), UNUSED)
@@ -4000,7 +3999,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
+<BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
 </UL>
 
 <P><STRONG><a name="[4ac]"></a>HAL_RCCEx_GetPeriphCLKConfig</STRONG> (Thumb, 320 bytes, Stack size 0 bytes, stm32f7xx_hal_rcc_ex.o(.text), UNUSED)
@@ -4632,7 +4631,7 @@ Global Symbols
 <P><STRONG><a name="[301]"></a>netos_flag_wait</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, net_config.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = netos_flag_wait &rArr; osThreadFlagsWait &rArr; EvrRtxThreadFlagsWait &rArr; EventRecord4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
+<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netETH_Thread
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCore_Thread
@@ -4871,17 +4870,17 @@ Global Symbols
 <LI><a href="#[367]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_open_file
 </UL>
 
-<P><STRONG><a name="[145]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
+<P><STRONG><a name="[144]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_auth_basic_parse
 </UL>
 
-<P><STRONG><a name="[143]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
+<P><STRONG><a name="[142]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[400]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_icmp_process
 <LI><a href="#[3fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_icmp6_process
 <LI><a href="#[406]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_cache_find
@@ -4889,8 +4888,8 @@ Global Symbols
 <LI><a href="#[411]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_process
 </UL>
 
-<P><STRONG><a name="[13c]"></a>strcpy</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, strcpy.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<P><STRONG><a name="[13b]"></a>strcpy</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, strcpy.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display
 </UL>
 
@@ -5020,13 +5019,13 @@ Global Symbols
 <LI><a href="#[395]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_add_header
 </UL>
 
-<P><STRONG><a name="[13f]"></a>netCGI_GetEnvVar</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, net_http_server.o(.text.netCGI_GetEnvVar))
+<P><STRONG><a name="[13e]"></a>netCGI_GetEnvVar</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, net_http_server.o(.text.netCGI_GetEnvVar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = netCGI_GetEnvVar &rArr; net_xtouc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_xtouc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
 </UL>
 
 <P><STRONG><a name="[3ac]"></a>netCGI_ProcessCookie</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, net_http_server.o(.text.netCGI_ProcessCookie))
@@ -5103,12 +5102,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_Script
 </UL>
 
-<P><STRONG><a name="[144]"></a>netHTTPs_LoginActive</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, net_http_server.o(.text.netHTTPs_LoginActive))
+<P><STRONG><a name="[143]"></a>netHTTPs_LoginActive</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, net_http_server.o(.text.netHTTPs_LoginActive))
 <BR><BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_Script
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 </UL>
 
-<P><STRONG><a name="[146]"></a>netHTTPs_SetPassword</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, net_http_server.o(.text.netHTTPs_SetPassword))
+<P><STRONG><a name="[145]"></a>netHTTPs_SetPassword</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, net_http_server.o(.text.netHTTPs_SetPassword))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = netHTTPs_SetPassword &rArr; EventRecordData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecordData
@@ -5117,10 +5116,10 @@ Global Symbols
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_strcpy
 <LI><a href="#[35f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_5
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 </UL>
 
-<P><STRONG><a name="[139]"></a>netIF_GetOption</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, net_sys.o(.text.netIF_GetOption))
+<P><STRONG><a name="[138]"></a>netIF_GetOption</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, net_sys.o(.text.netIF_GetOption))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = netIF_GetOption &rArr; net_sys_lock &rArr; netos_lock &rArr; osMutexAcquire &rArr; EvrRtxMutexAcquire &rArr; EventRecord2
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecord2
@@ -5132,7 +5131,7 @@ Global Symbols
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Display
 </UL>
 
-<P><STRONG><a name="[141]"></a>netIF_SetOption</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, net_sys.o(.text.netIF_SetOption))
+<P><STRONG><a name="[140]"></a>netIF_SetOption</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, net_sys.o(.text.netIF_SetOption))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = netIF_SetOption &rArr; net_sys_lock &rArr; netos_lock &rArr; osMutexAcquire &rArr; EvrRtxMutexAcquire &rArr; EventRecord2
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecord2
@@ -5140,19 +5139,19 @@ Global Symbols
 <LI><a href="#[332]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_sys_lock
 <LI><a href="#[3cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_if_map_all
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
+<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
 </UL>
 
-<P><STRONG><a name="[140]"></a>netIP_aton</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, net_addr.o(.text.netIP_aton))
+<P><STRONG><a name="[13f]"></a>netIP_aton</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, net_addr.o(.text.netIP_aton))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = netIP_aton &rArr; net_addr6_aton &rArr; net_xtoul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr6_aton
 <LI><a href="#[3ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr4_aton
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
+<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
 </UL>
 
-<P><STRONG><a name="[13a]"></a>netIP_ntoa</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, net_addr.o(.text.netIP_ntoa))
+<P><STRONG><a name="[139]"></a>netIP_ntoa</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, net_addr.o(.text.netIP_ntoa))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = netIP_ntoa &rArr; ip6_ntoa &rArr; ip4_ntoa &rArr; net_itoa &rArr; i2str &rArr; ul2str
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip6_ntoa
@@ -5221,7 +5220,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_atoi
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_aton
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_aton
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_eth_iface_init
 </UL>
 
@@ -5240,7 +5239,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[3d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_0
 <LI><a href="#[3d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_xtoul
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_aton
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_aton
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_eth_iface_init
 </UL>
 
@@ -5740,7 +5739,7 @@ Global Symbols
 <LI><a href="#[410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip6_chksum
 <LI><a href="#[32b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr6_comp
 <LI><a href="#[411]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_process
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_loop_iface_run
@@ -5786,7 +5785,7 @@ Global Symbols
 <LI><a href="#[37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_alloc
 <LI><a href="#[417]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip4_send_frame
 <LI><a href="#[416]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip4_chksum_buf
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_loop_iface_run
@@ -5811,8 +5810,8 @@ Global Symbols
 <P><STRONG><a name="[3cd]"></a>net_if_map_all</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, net_sys.o(.text.net_if_map_all))
 <BR><BR>[Calls]<UL><LI><a href="#[41a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_map_if
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
 </UL>
 
 <P><STRONG><a name="[3f8]"></a>net_ip4_chk_frame</STRONG> (Thumb, 392 bytes, Stack size 32 bytes, net_ip4.o(.text.net_ip4_chk_frame))
@@ -6254,7 +6253,7 @@ Global Symbols
 <LI><a href="#[429]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr6_is_onlink
 <LI><a href="#[32b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr6_comp
 <LI><a href="#[42a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr6_is_linklocal
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_eth_send_frame
 </UL>
@@ -6335,7 +6334,7 @@ Global Symbols
 <LI><a href="#[37a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_free
 <LI><a href="#[32b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr6_comp
 <LI><a href="#[42a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_addr6_is_linklocal
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_icmp6_process
@@ -6404,7 +6403,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d1]"></a>net_strcpy</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, net_common.o(.text.net_strcpy))
-<BR><BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
+<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_http_server_run
 <LI><a href="#[389]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp6_send_message
 <LI><a href="#[353]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dhcp_send_message
@@ -6448,9 +6447,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netos_lock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netInitialize
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCore_Thread
 <LI><a href="#[331]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_1
@@ -6479,9 +6478,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[300]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netos_unlock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netInitialize
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCore_Thread
 <LI><a href="#[359]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_4
@@ -6760,7 +6759,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[444]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hex2uc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_GetEnvVar
+<BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_GetEnvVar
 <LI><a href="#[3d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netMAC_aton
 <LI><a href="#[3a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_proc_uri
 </UL>
@@ -6778,7 +6777,7 @@ Global Symbols
 
 <P><STRONG><a name="[4cc]"></a>__1sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf), UNUSED)
 
-<P><STRONG><a name="[13b]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf))
+<P><STRONG><a name="[13a]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0sprintf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_Script
@@ -6798,28 +6797,27 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[6d]"></a>BlinkLed</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, http_server.o(.text))
+<P><STRONG><a name="[6d]"></a>BlinkLed</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, http_server.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = BlinkLed &rArr; osDelay &rArr; EvrRtxDelayError &rArr; EventRecord2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_SetOut
-<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
+<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> http_server.o(.text)
 </UL>
 <P><STRONG><a name="[6e]"></a>Display</STRONG> (Thumb, 280 bytes, Stack size 0 bytes, http_server.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 392<LI>Call Chain = Display &rArr; GLCD_Initialize &rArr; BSP_SDRAM_Init &rArr; BSP_SDRAM_MspInit &rArr; HAL_DMA_Init &rArr; HAL_GetTick &rArr; osKernelGetTickCount &rArr; EvrRtxKernelGetTickCount &rArr; EventRecord2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DrawString
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetFont
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_ClearScreen
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetForegroundColor
-<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetBackgroundColor
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osThreadFlagsWait
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_DrawString
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetFont
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_ClearScreen
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetForegroundColor
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_SetBackgroundColor
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_Initialize
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> http_server.o(.text)
 </UL>
@@ -8652,7 +8650,7 @@ Local Symbols
 <LI><a href="#[354]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_3
 <LI><a href="#[325]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OUTLINED_FUNCTION_0
 <LI><a href="#[385]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;proc_opt_ia_na
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> net_dhcp6_client.o(.text.net_dhcp6_client_init)
 </UL>
@@ -8867,8 +8865,8 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecordData
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecord2
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessQuery
 <LI><a href="#[37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_alloc
 <LI><a href="#[39f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_kill_session
 <LI><a href="#[37e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_strcasecmp
@@ -8903,7 +8901,7 @@ Local Symbols
 <P><STRONG><a name="[39f]"></a>http_kill_session</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, net_http_server.o(.text.http_kill_session))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = http_kill_session &rArr; netCGI_ProcessData &rArr; netHTTPs_SetPassword &rArr; EventRecordData
 </UL>
-<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[37a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_free
 <LI><a href="#[3a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_fclose
 </UL>
@@ -9024,7 +9022,7 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = http_proc_post &rArr; netCGI_ProcessData &rArr; netHTTPs_SetPassword &rArr; EventRecordData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecord2
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[37a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_free
 <LI><a href="#[37c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_alloc
 <LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
@@ -9103,7 +9101,7 @@ Local Symbols
 <P><STRONG><a name="[35f]"></a>OUTLINED_FUNCTION_5</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, net_http_server.o(.text.OUTLINED_FUNCTION_5))
 <BR><BR>[Calls]<UL><LI><a href="#[360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
 <LI><a href="#[35c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_script_line
 </UL>
 
@@ -9159,7 +9157,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecordData
 <LI><a href="#[37e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_strcasecmp
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[39e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_CheckAccount
 <LI><a href="#[39c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_base64_decode
 <LI><a href="#[39d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_strchr
@@ -9195,7 +9193,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[399]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_itoa
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
 <LI><a href="#[3bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip6_ntoa
 </UL>
 
@@ -9206,7 +9204,7 @@ Local Symbols
 <LI><a href="#[3bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ultox
 <LI><a href="#[3bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip4_ntoa
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIP_ntoa
 </UL>
 
 <P><STRONG><a name="[3d7]"></a>OUTLINED_FUNCTION_0</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, net_addr.o(.text.OUTLINED_FUNCTION_0))

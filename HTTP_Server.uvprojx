@@ -54,7 +54,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>0</BrowseInformation>
+          <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Debug\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -508,6 +508,16 @@
               <FileName>index.htm</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\index.htm</FilePath>
+            </File>
+            <File>
+              <FileName>script.js</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\script.js</FilePath>
+            </File>
+            <File>
+              <FileName>button.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\button.cgi</FilePath>
             </File>
           </Files>
         </Group>
@@ -1043,6 +1053,16 @@
               <FileName>index.htm</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\index.htm</FilePath>
+            </File>
+            <File>
+              <FileName>script.js</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\script.js</FilePath>
+            </File>
+            <File>
+              <FileName>button.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\button.cgi</FilePath>
             </File>
           </Files>
         </Group>

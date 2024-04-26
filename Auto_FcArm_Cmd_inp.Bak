@@ -17,5 +17,7 @@ logo.gif,
 llblue.jpg,
 pabb.gif,
 vives.png,
-index.cgi 
+index.htm,
+script.js,
+button.cgi 
 TO Web.c RTE NOPRINT ROOT(Web)
