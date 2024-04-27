@@ -375,7 +375,8 @@ uint32_t netCGI_Script (const char *env, char *buf, uint32_t buflen, uint32_t *p
       break;
 		
 		case 'z':
-			 len = (uint32_t)sprintf (buf, &env[1], get_button()?"checked":"");
+			 //nu 4x de blauwe button => te wijzigen naar button 0, buton 1, button 2 en button 3
+			 len = (uint32_t)sprintf (buf, &env[1], get_button()?"true":"false", get_button()?"true":"false", get_button()?"true":"false", get_button()?"true":"false");
 			
 		break;
 		
