@@ -4,11 +4,11 @@ window.setInterval(() => {
     console.log("Hello, World!");
     let checkbox = document.getElementById("button");
     fetch("button.cgi")
-    .then(response => response.text())
-    .then(text => {
-        console.log(text);
-        if(text =="checked")
-        {checkbox.setAttribute("checked", "checked");}
+    .then(response => response.json())
+    .then(json => {
+        console.log(json);
+        if(json[0])
+        {checkbox.setAttribute("checked", null);}
         else
         {checkbox.removeAttribute("checked");
     }});
