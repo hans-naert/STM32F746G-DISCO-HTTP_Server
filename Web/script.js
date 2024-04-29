@@ -3,14 +3,17 @@ console.log("Hello, World!");
 window.setInterval(() => {
     console.log("Hello, World!");
     let checkbox = document.getElementById("button");
+    let progress = document.getElementById("progress1");
     fetch("button.cgi")
     .then(response => response.json())
     .then(json => {
         console.log(json);
         if(json[0])
-        {checkbox.setAttribute("checked", null);}
+        {checkbox.setAttribute("checked", null);
+        progress.value=100;}
         else
         {checkbox.removeAttribute("checked");
+        progress.value=0;
     }});
 
 }, 10000);
