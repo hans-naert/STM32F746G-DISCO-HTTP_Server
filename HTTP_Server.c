@@ -147,6 +147,7 @@ static __NO_RETURN void BlinkLed (void *arg) {
     /* Every 100 ms */
     if (LEDrun == true) {
       LED_SetOut (led_val[cnt]);
+			//HAL_GPIO_TogglePin(GPIOF, GPIO_PIN_6);
       if (++cnt >= sizeof(led_val)) {
         cnt = 0U;
       }

@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 #include "cmsis_os2.h"                  // ::CMSIS:RTOS2
 #include "rl_net.h"                     // Keil.MDK-Pro::Network:CORE
 
@@ -144,6 +145,12 @@ void netCGI_ProcessData (uint8_t code, const char *data, uint32_t len) {
       }
       else if (strcmp (var, "led7=on") == 0) {
         P2 |= 0x80;
+      }
+			else if (strcmp (var, "extled1=on") == 0) {
+				HAL_GPIO_WritePin(GPIOF, GPIO_PIN_6,GPIO_PIN_SET);        
+      }
+			else if (strcmp (var, "extled1=off") == 0) {
+        HAL_GPIO_WritePin(GPIOF, GPIO_PIN_6,GPIO_PIN_RESET);        
       }
       else if (strcmp (var, "ctrl=Browser") == 0) {
         LEDrun = false;
