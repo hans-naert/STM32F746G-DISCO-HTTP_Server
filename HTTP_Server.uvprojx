@@ -505,9 +505,19 @@
               <FilePath>.\Web\vives_logo.png</FilePath>
             </File>
             <File>
-              <FileName>index.cgi</FileName>
+              <FileName>button.cgi</FileName>
               <FileType>9</FileType>
-              <FilePath>.\Web\index.cgi</FilePath>
+              <FilePath>.\Web\button.cgi</FilePath>
+            </File>
+            <File>
+              <FileName>index.htm</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\index.htm</FilePath>
+            </File>
+            <File>
+              <FileName>script.js</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\script.js</FilePath>
             </File>
           </Files>
         </Group>
@@ -1040,9 +1050,19 @@
               <FilePath>.\Web\vives_logo.png</FilePath>
             </File>
             <File>
-              <FileName>index.cgi</FileName>
+              <FileName>button.cgi</FileName>
               <FileType>9</FileType>
-              <FilePath>.\Web\index.cgi</FilePath>
+              <FilePath>.\Web\button.cgi</FilePath>
+            </File>
+            <File>
+              <FileName>index.htm</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\index.htm</FilePath>
+            </File>
+            <File>
+              <FileName>script.js</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\script.js</FilePath>
             </File>
           </Files>
         </Group>
