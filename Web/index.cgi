@@ -7,7 +7,7 @@ t </head>
 t <body>
 t   <h1>Hello Vives</h1>
 t   <img src="vives_logo.png" alt="Vives Logo" width="200" height="100" />
-t   <input type=checkbox name=button disabled checked/>
+c z  <input type=checkbox name=button disabled %s/>
 t </body>
 t </html>
 .

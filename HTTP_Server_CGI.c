@@ -373,6 +373,11 @@ uint32_t netCGI_Script (const char *env, char *buf, uint32_t buflen, uint32_t *p
       len = (uint32_t)sprintf (buf, "<checkbox><id>button%c</id><on>%s</on></checkbox>",
                                env[1], (get_button () & (1 << (env[1]-'0'))) ? "true" : "false");
       break;
+		
+		case 'z':
+      // checked toevoegen aan string
+      len = (uint32_t)sprintf (buf, &env[1], get_button()?"checked":"");
+      break;
   }
   return (len);
 }

@@ -1,4 +1,3 @@
-index.htm,
 pg_header.inc,
 pg_footer.inc,
 ad.cgi,
@@ -17,5 +16,6 @@ keil.gif,
 logo.gif,
 llblue.jpg,
 pabb.gif,
-vives_logo.png 
+vives_logo.png,
+index.cgi 
 TO Web.c RTE NOPRINT ROOT(Web)
