@@ -410,11 +410,6 @@
           <GroupName>Web files</GroupName>
           <Files>
             <File>
-              <FileName>index.htm</FileName>
-              <FileType>9</FileType>
-              <FilePath>.\Web\index.htm</FilePath>
-            </File>
-            <File>
               <FileName>pg_header.inc</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\pg_header.inc</FilePath>
@@ -508,6 +503,11 @@
               <FileName>vives_logo.png</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\vives_logo.png</FilePath>
+            </File>
+            <File>
+              <FileName>index.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\index.cgi</FilePath>
             </File>
           </Files>
         </Group>
@@ -945,11 +945,6 @@
           <GroupName>Web files</GroupName>
           <Files>
             <File>
-              <FileName>index.htm</FileName>
-              <FileType>9</FileType>
-              <FilePath>.\Web\index.htm</FilePath>
-            </File>
-            <File>
               <FileName>pg_header.inc</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\pg_header.inc</FilePath>
@@ -1043,6 +1038,11 @@
               <FileName>vives_logo.png</FileName>
               <FileType>9</FileType>
               <FilePath>.\Web\vives_logo.png</FilePath>
+            </File>
+            <File>
+              <FileName>index.cgi</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\index.cgi</FilePath>
             </File>
           </Files>
         </Group>
