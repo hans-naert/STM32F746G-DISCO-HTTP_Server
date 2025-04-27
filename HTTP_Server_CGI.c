@@ -14,6 +14,7 @@
 #include "rl_net.h"                     // Keil.MDK-Pro::Network:CORE
 
 #include "Board_LED.h"                  // ::Board Support:LED
+#include "parson.h"
 
 #if      defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050)
 #pragma  clang diagnostic push
@@ -104,6 +105,26 @@ void netCGI_ProcessQuery (const char *qstr) {
 void netCGI_ProcessData (uint8_t code, const char *data, uint32_t len) {
   char var[40],passw[12];
 
+	//parse JSON
+	if(code==4) {
+		//parse JSON data
+    JSON_Value *root_value = json_parse_string(data);
+    JSON_Object *root_object = json_value_get_object(root_value);
+    // Get the JSON array from the JSON object
+    JSON_Array *led_array = json_object_get_array(root_object, "leds");
+    // print all the values in the array
+    size_t count = json_array_get_count(led_array);
+    for (size_t i = 0; i < count; i++) {
+      JSON_Value *led_value = json_array_get_value(led_array, i);
+      // Get the boolean value from the JSON value  
+      bool led = json_value_get_boolean(led_value);
+      // Print the boolean value  
+      printf("leds[%d]: %s\n", i, led ? "true" : "false");
+    }
+    //free the JSON value
+    json_value_free(root_value);
+  }
+	
   if (code != 0) {
     // Ignore all other codes
     return;

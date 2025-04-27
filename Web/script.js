@@ -32,4 +32,21 @@ window.addEventListener(('load'), (event) => {
         console.log(txt);
     };
 
+    document.getElementById("toggle-json-button").onclick = async () => {
+        let data = {
+            "leds" : [true, false, true, false],
+        };
+        let response = await fetch("test.cgi",
+            {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                    //'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: JSON.stringify(data)
+            });
+        let txt = await response.text();
+        console.log(txt);
+    };
+
 });
