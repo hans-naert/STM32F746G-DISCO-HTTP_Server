@@ -11,7 +11,7 @@
 #include <string.h>
 #include "cmsis_os2.h"                  // ::CMSIS:RTOS2
 #include "rl_net.h"                     // Keil.MDK-Pro::Network:CORE
-
+#include "main.h"
 #include "Board_LED.h"                  // ::Board Support:LED
 
 #if      defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050)
@@ -171,6 +171,15 @@ void netCGI_ProcessData (uint8_t code, const char *data, uint32_t len) {
         strcpy (lcd_text[1], var+5);
         osThreadFlagsSet (TID_Display, 0x01);
       }
+			else if(strcmp (var, "button1On=true")==0)  {
+				P2|=0x1;
+				HAL_GPIO_WritePin(EXT_LED1_GPIO_Port,EXT_LED1_Pin,GPIO_PIN_SET);
+			}
+			else if(strcmp (var, "button1On=false")==0)  {
+				P2&=(~0x1);
+				HAL_GPIO_WritePin(EXT_LED1_GPIO_Port,EXT_LED1_Pin,GPIO_PIN_RESET);
+			}
+			
     }
   } while (data);
   LED_SetOut (P2);

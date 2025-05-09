@@ -31,6 +31,9 @@
 #include "cmsis_os2.h"                  // ::CMSIS:RTOS2
 #endif
 
+#define EXT_LED1_Pin GPIO_PIN_6
+#define EXT_LED1_GPIO_Port GPIOF
+
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 extern uint64_t app_main_stk[];
